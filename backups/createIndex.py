@@ -20,7 +20,7 @@ with open("index.html","w") as f:
     files.remove("index.html")
     files.remove("createIndex.py")
     for file in files:
-        f.write(f"<tr><td><i class=\"icon icon-_blank\"></i></td><td class=\"perms\"><code>(-rw-rw-rw-)</code></td><td class=\"file-size\"><code>{sizeof_fmt(os.path.getsize(file))}</code></td><td class=\"display-name\"><a href=\"images/{file}\">{file}</a></td></tr>")
+        f.write(f"<tr><td><i class=\"icon icon-_blank\"></i></td><td class=\"perms\"><code>(-rw-rw-rw-)</code></td><td class=\"file-size\"><code>{sizeof_fmt(os.path.getsize(file))}</code></td><td class=\"display-name\"><a href=\"{file}\">{file}</a></td></tr>")
     f.write(footer)
 
 
