@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="scripts.js"></script>
+	<title>Money Corp</title>
+</head>
+
+<body>
+	<header>
+		<div class="title-image">
+			<img src="images/CompanyLogo.jpg" alt="CompanyLogo">
+		</div>
+		<div class="title-text">
+			<h1>Money Corp</h1>
+			<h2>You work so our shareholders don't have to</h2>
+		</div>
+	</header>
+	<main>
+		<H1>Sign in</H1>
+		<form name="Form1">
+			<fieldset>
+				<legend>Please enter your details:</legend>
+				<table class="central">
+					<tr>
+						<th>Username:</th>
+						<th><input type="text" id="username" size="20" placeholder="JSmith"></th>
+					</tr>
+					<tr>
+						<th>Password:</th>
+						<th><input type="password" id="pass" size="20" placeholder="••••••••••"></th>
+					</tr>
+				</table>
+			</fieldset>
+			<br>
+			<input type="button" value="Submit" id="submit_button" onclick="postUserDetails()">
+			<input type="reset" value="Reset" id="reset_button" onclick="resetData()">
+		</form>
+		<H5 id="successText">Error: This message should not be visible</H5>
+		<script>
+		//welcome to the hackiest code on planet earth
+		var submit_button_id = "submit_button"
+		var username_input = document.getElementById("username");
+		username_input.addEventListener("keypress", function(event) {
+		  // If the user presses the "Enter" key on the keyboard
+		  if (event.key === "Enter") {
+			// Cancel the default action, if needed
+			event.preventDefault();
+			// Trigger the button element with a click
+			document.getElementById(submit_button_id).click();
+		  }
+		});
+		var password_input = document.getElementById("pass");
+		password_input.addEventListener("keypress", function(event) {
+		  // If the user presses the "Enter" key on the keyboard
+		  if (event.key === "Enter") {
+			// Cancel the default action, if needed
+			event.preventDefault();
+			// Trigger the button element with a click
+			document.getElementById(submit_button_id).click();
+		  }
+		});
+		</script>
+	</main>
+	<footer>
+	</footer>
+</body>
+</html>

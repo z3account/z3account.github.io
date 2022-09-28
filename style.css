@@ -1,0 +1,253 @@
+
+body {
+    font-family: 'Georgia', monospace;
+	background-color: #EEEEEE;
+}
+
+header, main {
+	padding: 20px;
+	margin: 20px auto;
+    max-width: 1000px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-image img {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+}
+
+.title-text {
+    text-align: center;
+    align-self: center;
+    max-width: 400px;
+}
+
+.title-text h1 {
+    font-size: 42px;
+    margin-bottom: 0;
+}
+
+.title-text h2 {
+    color: gray;
+	font-style: italic;
+	font-size: 25px;
+    margin-top: 0px;
+}
+
+.title-links {
+	/*
+    max-width: 360px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+	*/
+}
+
+.title-links a {
+	line-height: 20px;
+    color: black;
+	text-decoration: none;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.title-links a:hover {
+    font-style: italic;
+}
+
+.inline-icon{
+	vertical-align: -20%;
+	width: 20px;
+    height: 20px;
+}
+
+
+
+.bodyButtons {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+	max-width: 450px;
+	padding-bottom: 20px;
+}
+
+.bodyButtons button {
+	font-weight: bold;
+	
+	
+	/* https://getcssscan.com/css-buttons-examples */
+	align-self: center;
+	background-color: #fff;
+	background-image: none;
+	background-position: 0 90%;
+	background-repeat: repeat no-repeat;
+	background-size: 4px 3px;
+	border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+	border-style: solid;
+	border-width: 2px;
+	box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+	box-sizing: border-box;
+	color: #41403e;
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 23px;
+	outline: none;
+	padding: .75rem;
+	text-decoration: none;
+	transition: all 235ms ease-in-out;
+	border-bottom-left-radius: 15px 255px;
+	border-bottom-right-radius: 225px 15px;
+	border-top-left-radius: 255px 15px;
+	border-top-right-radius: 15px 225px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	
+}
+
+.bodyButtons button.clicked {
+	box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+	transform: translate3d(0, 2px, 0);
+	/*
+	border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    padding: 5px 10px;
+    color: #fb1e7b;
+    background: white;	
+	*/
+}
+.bodyButtons button.unclicked {
+	cursor: pointer;
+	/*
+	cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: white;
+	
+	border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    padding: 5px 10px;
+    color: #fb1e7b;
+    background: white;
+	*/
+}
+
+.bodyButtons button.unclicked:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+	transform: translate3d(0, 2px, 0);
+}
+.bodyButtons button.unclicked:focus {
+	box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+
+.bodyInformation {
+	display: none;
+}
+.bodyInformation p {
+	line-height: 27px;
+    font-size: 20px;
+}
+
+.bodyInformation a {
+	line-height: 20px;
+    background-color: rgba(255,255,0,0.05);
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+    color: black;
+	text-decoration: none;
+}
+.bodyInformation a:hover {
+    background-color: rgba(255,255,0,0.5);
+    font-style: italic;
+}
+	
+.link-box {
+	display: flex;
+    flex-wrap: wrap;
+}
+.link-box a {
+	background-color: rgba(255,255,0,0);
+	border-bottom: 1px solid rgba(0,0,0,0);
+}
+.link-box a:hover {
+	background-color: rgba(255,255,0,0);
+	font-style: normal;
+}
+.link-box div {
+	flex: 1 1 300px;
+	display: inline-block;
+	text-align: center;
+    padding: 0 10px;
+	padding-bottom: 10px;
+}
+.link-box img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 300px;
+    height: 250px;
+}
+.link-box div h3 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+	font-style: italic;
+}
+.link-box div p {
+    margin-top: 7px;
+    margin-bottom: 0px;
+    font-size: 17px;
+	line-height: 1.1;
+}
+
+/*Sets up the form*/
+#successText {
+	display:none;
+	padding: 5px;
+	padding-left:5px;
+	padding-right:5px;
+	border-radius:3px;
+}
+
+
+/*
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body.theme-dark {
+    background-color: black;
+    color: white;
+}
+*/
+
+@media screen and (max-width:768px) {
+	
+	header {
+		flex-direction: column;
+	}
+	.title-image {
+		text-align: center;
+		order: 0;
+	}
+	.title-text {
+		text-align: center;
+		order: 1;
+	}
+	
+	
+}
+
