@@ -236,6 +236,18 @@ body.theme-dark {
 
 @media screen and (max-width:768px) {
 	
+	header, main{
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	
+	main h1{
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	
 	header {
 		flex-direction: column;
 	}
