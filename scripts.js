@@ -35,6 +35,7 @@ function saveForm(){
 	if (validateName(username)==false){
 		return "Error: Invalid Username"
 	}
+	username = username.replace(" ", "");
 	formData.username = username;
 	
 	//Same for the last name
@@ -42,6 +43,7 @@ function saveForm(){
 	if (validateName(pass)==false){
 		return "Error: Invalid Password"
 	}
+	pass = pass.replace(" ", "");
 	formData.pass = pass;
 	
     return formData
